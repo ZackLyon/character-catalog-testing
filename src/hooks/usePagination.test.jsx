@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import UsePaginationExample from './usePagination.example';
 
-describe('usePagination', () => {
+describe.skip('usePagination', () => {
   it('should be able to update the current page when requested', async () => {
     render(<UsePaginationExample totalPages={5} />);
 
