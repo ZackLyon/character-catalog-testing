@@ -20,6 +20,7 @@ export default function CharacterList() {
 
   useEffect(() => {
     setLoading(true);
+    console.log(currentPage);
     getCharacters(currentPage)
       .then((res) => {
         setTotalPages(res.pages);
